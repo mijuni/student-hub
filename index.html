@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Student Hub Desgin</title>
+    <meta name="author" content=" Mi Mai, Chris Oprisiu, Thomas Salmann">
+    <meta name="description" content="Kata">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <input type="checkbox" id="menue">
+
+            <label for="menue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+
+            </label>
+            <div class="menue-box">
+                <nav class="nav-list">
+                    <input type="checkbox" name="open" id="open">
+                    <label for="open">
+                        <div class="open-menue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </div>
+                    </label>
+
+                    <a class="link first-link" href="">Lobby</a>
+                    <a class="link" href="">Schedule</a>
+                    <a class="link" href="">Meetings</a>
+                    <a class="link" href="">Recordings</a>
+                    <a class="link" href="">Timer</a>
+                    <a class="link" href="">Students</a>
+                    <a class="link" href="">Slides</a>
+                    <a class="link" href="">Logout</a>
+                </nav>
+            </div>
+
+        </div>
+        <h1> CODING BOOTCAMPS EUROPE</h1>
+        <svg class="svg-arrow" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0,0 50,100 100,0"></polygon>
+        </svg>
+    </header>
+    <main>
+        <article>
+            <h2 class="students-heading">STUDENTS<h2>
+                    <div class="second-heading">Your fellow students</div>
+                    <div class="search-line">
+                        <input type="text" name="searchbar" id="searchbar" placeholder="Search for students names">
+                        <label for="searchbar">
+                            <div class="lupe">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6A1CC3"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="drop-line">
+                        <div class="drop-wrapper">
+                            <select class="month-class" id="month-class">
+                                <option class="list-item" value="november-class">NovemberClass2021</option>
+                                <option class="list-item" value="october-class">Octoberclass2021</option>
+                                <option class="list-item" value="september-class">SeptemberClass2021</option>
+                                <option class="list-item" value="august-class">AugustClass2021</option>
+                            </select>
+                            <label for="month-class">
+                                <div class="icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="arrow-icon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="drop-wrapper">
+                            <select class="attendance" id="attendance">
+                                <option class="list-item" value="Full-time">Full-time</option>
+                                <option class="list-item" value="Part-Time">Part-Time</option>
+                            </select>
+                            <label for="attendance">
+                                <div class="icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="arrow-icon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+        </article>
+
+        <article>
+            <h3 class="second-heading">Full-time November Class of 2021</h3>
+            <section class="member">
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="person">
+                    <h3 class="profile-name">Dimitry Kolesnikov</h3>
+                    <a class="profile-link" href="github.com/Dim87">github.com/Dim87</a>
+                </div>
+            </section>
+            <section class="member">
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="person">
+                    <h3 class="profile-name">Justus Siegbert</h3>
+                    <a class="profile-link" href="github.com/justussiebert">github.com/justussiebert</a>
+                </div>
+            </section>
+            <section class="member">
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="person">
+                    <h3 class="profile-name">Manuel Hohenadl</h3>
+                    <a class="profile-link" href="github.com/Manoo89">github.com/Manoo89</a>
+                </div>
+            </section>
+            <section class="member">
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="person">
+                    <h3 class="profile-name">Ovidiu Goanta</h3>
+                    <a class="profile-link" href="github.com/Goanta-Ovidiu">github.com/Goanta-Ovidiu</a>
+                </div>
+            </section>
+            <section class="member">
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="person">
+                    <h3 class="profile-name">Patricia Prager</h3>
+                    <a class="profile-link" href="github.com/patprager">github.com/patprager</a>
+                </div>
+            </section>
+        </article>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>
